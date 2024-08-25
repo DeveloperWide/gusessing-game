@@ -1,0 +1,368 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.game-container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+input[type="number"] {
+    padding: 10px;
+    width: 200px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#feedback {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+#guessCount {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+#restartBtn {
+    display: none;
+    margin-top: 20px;
+}
+
+/* Add keyframes for the shake animation */
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    20%,
+    60% {
+        transform: translateX(-10px);
+    }
+
+    40%,
+    80% {
+        transform: translateX(10px);
+    }
+}
+
+/* Add keyframes for the progress bar filling */
+@keyframes fill {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: var(--bg-color, #f4f4f4);
+}
+
+.game-container {
+    text-align: center;
+    background-color: var(--container-bg, #fff);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+input[type="number"] {
+    padding: 10px;
+    width: 200px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    transition: border-color 0.3s;
+}
+
+input[type="number"].shake {
+    animation: shake 0.5s;
+    border-color: red;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#feedback {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+#guessCount {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+#restartBtn {
+    display: none;
+    margin-top: 20px;
+}
+
+/* Progress bar styles */
+.progress-bar {
+    margin-top: 20px;
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-bar-fill {
+    height: 10px;
+    background-color: #4caf50;
+    width: 0;
+    animation: fill 2s forwards;
+}
+
+/* Theme button styles */
+.theme-buttons {
+    margin-top: 20px;
+}
+
+.theme-button {
+    padding: 5px 10px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.theme-light {
+    background-color: #007bff;
+}
+
+.theme-dark {
+    background-color: #343a40;
+}
+
+.theme-forest {
+    background-color: #28a745;
+}
+
+:root {
+    --font-color: #333;
+    --input-bg: #fff;
+    --input-border-color: #ccc;
+    --button-bg: #007bff;
+    --button-text-color: #fff;
+    --button-hover-bg: #0056b3;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: var(--font-color);
+    background-color: var(--bg-color, #f4f4f4);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.game-container {
+    background-color: var(--container-bg, #fff);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+input[type="number"] {
+    padding: 10px;
+    width: 200px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    background-color: var(--input-bg);
+    border: 1px solid var(--input-border-color);
+    border-radius: 5px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 10px;
+    background-color: var(--button-bg);
+    color: var(--button-text-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--button-hover-bg);
+}
+
+#feedback {
+    margin-top: 20px;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+#guessCount {
+    margin-top: 10px;
+    font-size: 16px;
+    color: var(--font-color);
+}
+
+.progress-bar {
+    margin-top: 20px;
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-bar-fill {
+    height: 10px;
+    background-color: #4caf50;
+    width: 0;
+}
+
+.theme-buttons {
+    margin-top: 20px;
+}
+
+.theme-button {
+    padding: 5px 10px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.theme-light {
+    background-color: #007bff;
+}
+
+.theme-dark {
+    background-color: #343a40;
+}
+
+.theme-forest {
+    background-color: #28a745;
+}
+
+.theme-light {
+    --bg-color: #f4f4f4;
+    --container-bg: #ffffff;
+    --font-color: #333;
+    --input-bg: #ffffff;
+    --input-border-color: #ccc;
+    --button-bg: #007bff;
+    --button-text-color: #fff;
+    --button-hover-bg: #0056b3;
+}
+
+.theme-dark {
+    --bg-color: #343a40;
+    --container-bg: #495057;
+    --font-color: #fff;
+    --input-bg: #495057;
+    --input-border-color: #6c757d;
+    --button-bg: #6c757d;
+    --button-text-color: #fff;
+    --button-hover-bg: #5a6268;
+}
+
+.theme-forest {
+    --bg-color: #2e8b57;
+    --container-bg: #3cb371;
+    --font-color: #fff;
+    --input-bg: #3cb371;
+    --input-border-color: #2e8b57;
+    --button-bg: #228b22;
+    --button-text-color: #fff;
+    --button-hover-bg: #006400;
+}
+
+#rangeDisplay {
+    font-size: 18px;
+    color: var(--font-color);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.share-buttons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.share-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.share-button:hover {
+    background-color: #0056b3;
+}
+
+#shareFacebook {
+    background-color: #3b5998;
+    /* Facebook color */
+}
+
+#shareWhatsApp {
+    background-color: #25D366;
+    /* WhatsApp color */
+}
+
+#shareInstagram {
+    background-color: #E1306C;
+    /* Instagram color */
+}
+
+#shareScoreBtn {
+    background-color: #FF5733;
+    /* Custom color for the score share button */
+}

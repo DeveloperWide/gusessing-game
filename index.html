@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="game-container">
+        <h1>Guess the Number!</h1>
+        <div id="rangeDisplay">Guess a number between 1 and 1000</div>
+        <input type="number" id="guessInput" placeholder="Enter a number between 1 and 1000">
+        <button id="submitBtn">Submit</button>
+        <div id="feedback"></div>
+        <div id="guessCount">Guesses: 0</div>
+        <button id="restartBtn">Restart Game</button>
+
+        <div class="progress-bar">
+            <div class="progress-bar-fill"></div>
+        </div>
+
+        <div class="theme-buttons">
+            <button class="theme-button theme-light">Light Theme</button>
+            <button class="theme-button theme-dark">Dark Theme</button>
+            <button class="theme-button theme-forest">Forest Theme</button>
+        </div>
+
+        <!-- Share Buttons -->
+        <div class="share-buttons">
+            <a href="#" id="shareFacebook" class="share-button">Share on Facebook</a>
+            <a href="#" id="shareWhatsApp" class="share-button">Share on WhatsApp</a>
+            <a href="#" id="shareInstagram" class="share-button">Share on Instagram</a>
+            <button id="shareScoreBtn" class="share-button">Share My Score</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
